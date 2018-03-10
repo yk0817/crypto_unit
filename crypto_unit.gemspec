@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["山本憲"]
   spec.email         = ["em072029@gmail.com"]
 
-  spec.summary       = %q{library crypto_currency unit}
-  spec.description   = %q{library crypto_currency unit}
+  spec.summary       = %q{library unit}
+  spec.description   = %q{library unit}
   spec.homepage      = "https://github.com/yk0817/crypto_unit"
   spec.license       = "MIT"
 
