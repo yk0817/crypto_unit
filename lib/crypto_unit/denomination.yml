@@ -1,0 +1,34 @@
+BTC:
+  satoshi: 0.000_000_1
+ETH:
+  tether: 0.000_000_000_001
+  gether: 0.000_000_001
+  mether: 0.000_001
+  kether: 0.001
+  ether: 1
+  finney: 1_000
+  szabo: 1_000_000
+  gwei: 1_000_000_000
+  mwei: 1_000_000_000_000
+  kwei: 1_000_000_000_000_000
+  wei: 1_000_000_000_000_000_000
+  # litecoin
+  # https://ripple.com/build/currency-format/
+XRP:
+  drop: 0.000_001
+LTC:
+  lites: 0.001
+  photones: 0.000_001
+  litoshis: 0.00_000_001
+# https://getmonero.org/resources/moneropedia/denominations.html
+XMR:
+  piconero: 0.000_000_000_001
+  nanonero: 0.000_000_001
+  micronero: 0.000_001
+  millinero: 0.001
+  centinero: 0.01
+  decinero: 0.1
+  monero: 1
+XEM:
+  µxem: 0.000_001
+  mxem: 0.001
