@@ -1,117 +1,119 @@
 require "crypto_unit/version"
 require "yaml"
+require 'bigdecimal'
+require 'bigdecimal/util'
 
 
 module CryptoUnit
   ENCRYPT_YAML_PATH = File.dirname(File.expand_path(__FILE__)) + "/crypto_unit/denomination.yml"
   ENCRYPT_YAML_DATA = YAML.load_file(ENCRYPT_YAML_PATH)
-  
+
   # BTC
   def satoshi
-    self * ENCRYPT_YAML_DATA["BTC"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["BTC"]["#{__method__.downcase}"].to_d
   end
-  
+
   # ETH
   def tether
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   def gether
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   def mether
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   def kether
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   def ether
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   def finney
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   def szabo
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   def gwei
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   def mwei
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   def kwei
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   def wei
-    self * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["ETH"]["#{__method__.downcase}"].to_d
   end
-  
+
   # XRP
   def drop
-    self * ENCRYPT_YAML_DATA["XRP"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["XRP"]["#{__method__.downcase}"].to_d
   end
-  
+
   # LTC
   def lites
-    self * ENCRYPT_YAML_DATA["LTC"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["LTC"]["#{__method__.downcase}"].to_d
   end
-  
+
   def photones
-    self * ENCRYPT_YAML_DATA["LTC"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["LTC"]["#{__method__.downcase}"].to_d
   end
-  
+
   def litoshis
-    self * ENCRYPT_YAML_DATA["LTC"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["LTC"]["#{__method__.downcase}"].to_d
   end
-  
+
   # XMR
   def piconero
-    self * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_d
   end
-  
+
   def nanonero
-    self * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_d
   end
-  
+
   def micronero
-    self * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_d
   end
-  
+
   def millinero
-    self * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_d
   end
-  
+
   def centinero
-    self * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_d
   end
-  
+
   def decinero
-    self * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_d
   end
-  
+
   def monero
-    self * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["XMR"]["#{__method__.downcase}"].to_d
   end
-  
+
   # XEM
   def µxem
-    self * ENCRYPT_YAML_DATA["XEM"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["XEM"]["#{__method__.downcase}"].to_d
   end
-  
+
   def mxem
-    self * ENCRYPT_YAML_DATA["XEM"]["#{__method__.downcase}"].to_f
+    self.to_d * ENCRYPT_YAML_DATA["XEM"]["#{__method__.downcase}"].to_d
   end
-  
+
 end
 
 class Numeric
