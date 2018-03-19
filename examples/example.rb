@@ -1,7 +1,7 @@
 require_relative '../lib/crypto_unit'
 
 # BTC UNIT
-p 5.satoshi.to_f
+p 5.satoshi.to_fs
 
 # ETHER UNIT
 p 3.ether.to_f

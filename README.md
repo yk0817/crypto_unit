@@ -23,13 +23,13 @@ Or install it yourself as:
 ```ruby
 require 'crypto_unit'
 # BTC UNIT  
-p 5.satoshi # 5.0e-07
+p 5.satoshi.to_f # 5.0e-07
 # ETHER UNIT
-p 3.ether # 3
-p 2.finney # 2000.0
+p 3.ether.to_f # 3
+p 2.finney.to_f # 2000.0
 
 # LTC unit
-p 3.lites # 0.003
+p 3.lites.to_f # 0.003
 ```
 
 ## Development
